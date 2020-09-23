@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Website Video</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="landing-page-responsive-video.css">
+</head>
+<body>
+
+	<section class="background">
+		<header>
+			<h2 class="logo">Trip Turkey</h2>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Photography</a></li>
+				<li><a href="">Reserve</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+
+			<div class="menu-toggle">
+				<input type="checkbox">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</header>
+		<video src="video/video (2).mp4" muted loop autoplay></video>
+		<div class="teks">
+			<h1>Visit Capadocia</h1>
+			<h2>Panorama Awaits You</h2>
+			<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Architecto corporis magnam, at? Ducimus voluptatibus repellendus deserunt, dolorum fugit quo ullam consequatur aperiam quae nihil quia magni. Ut quo architecto, eligendi eius doloribus explicabo, odio fuga soluta fugit iusto magni porro id enim culpa cum quidem voluptatem sed.</p>
+			<a href="">Get Tickets Now</a>
+		</div>
+	</section>
+	
+
+<script>
+	const toggle = document.querySelector('.menu-toggle input');
+	const nav = document.querySelector('header ul');
+
+	toggle.addEventListener('click', function() {
+		nav.classList.toggle('slide');
+	});
+</script>
+</body>
+</html>
